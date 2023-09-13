@@ -2,7 +2,7 @@ public class Solution {
     public int[] TwoSum(int[] nums, int target)
     {
         int[] result = new int[2];
-    bool a= false;
+    
         for (int i = 0; i < nums.Length; i++)
         {
             for (int j = i+1; j < nums.Length; j++)
@@ -11,14 +11,11 @@ public class Solution {
                 {
                     result[0] = i;
                     result[1] = j;
-                a = true;
-                break;
+                
+                return result;
                 }
             }
-        if (a)
-        {
-            break;
-        }
+       
         }
         return result;
     }
